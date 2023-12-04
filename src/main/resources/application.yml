@@ -28,7 +28,7 @@ kafka:
 logger:
   levels:
     ROOT: INFO
-    com.ibm: INFO
+    com.ibm: DEBUG
     
 topic:
-  chat: ibm-landingzone
+  chat: chat-room
