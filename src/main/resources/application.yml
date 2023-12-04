@@ -1,0 +1,34 @@
+#Mon Dec 04 13:04:52 UTC 2023
+
+micronaut:
+  server:
+    port: 8082
+  application:
+    name: consumer
+  metrics:
+    export:
+      jmx:
+        step: PT1M
+        enabled: true
+      prometheus: 
+        enabled: true
+        step: PT1M
+        descriptions: true
+    enabled: true
+
+endpoints:
+  prometheus:
+    sensitive: false
+
+kafka:
+  group: consumer
+  bootstrap: 
+    servers: localhost:19092
+
+logger:
+  levels:
+    ROOT: INFO
+    com.ibm: INFO
+    
+topic:
+  chat: ibm-landingzone

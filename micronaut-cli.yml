@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.ibm
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [app-name, http-client-test, java, java-application, junit, kafka, logback, management, maven, maven-enforcer-plugin, micrometer, micrometer-jmx, micrometer-prometheus, micronaut-aot, micronaut-http-validation, netty-server, properties, readme, serialization-jackson, shade, test-resources]
